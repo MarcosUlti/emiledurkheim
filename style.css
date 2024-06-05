@@ -19,11 +19,19 @@ header {
     margin-bottom: 50px;
 }
 
-header img {
+.hud {
+    display: none;
+}
+
+.optionlmao {
+    display: none;
+}
+
+header .headerimg {
     width: 30px;
 }
 
-header span {
+header .headerspan {
     color: white;
     vertical-align: 10px;
 }
@@ -63,8 +71,16 @@ footer {
     header {
         gap: 40px;
     }
+ 
+    .hud {
+        display: none;
+    }
+
+    .optionlmao {
+        display: none;
+    }
     
-    header span {
+    header .headerspan {
         display: none;
     }
 
@@ -74,13 +90,37 @@ footer {
 }
 
 @media (max-width: 450px) {
+
     header {
-        gap: 10px;
+        display:flex;
+        justify-content: left;
     }
-    
-    header span {
+
+    header .headerimg {
         display: none;
     }
+    
+    header .headerspan {
+        display: none;
+    }
+
+    .hud {
+        display:flex;
+        color: white;
+    }
+
+    .hud img {
+        width: 30px;
+    }
+    
+    .optionlmao {
+        display: none;
+    }
+
+    .optionlmao.active {
+        display: flex;
+        flex-direction: column;
+       }
 
     .emiledurkheim {
         font-size: 20px;
